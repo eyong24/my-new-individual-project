@@ -8,7 +8,7 @@
     <!-- code for linking css file-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- font awesome css star rating-->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <span class="fa fa-star checked"></span>
     <span class="fa fa-star checked"></span>
     <span class="fa fa-star checked"></span>
@@ -16,20 +16,28 @@
     <span class="fa fa-star"></span> -->
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/ae66aefab1.js" crossorigin="anonymous"></script>
+    <!-- TYPING JS -->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <!-- swiper from cdn -->
+    <!-- <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/> -->
+  
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
 
-    <title>Grocery store</title>
+
+    <title>shop store</title>
 </head>
 
 <body>
     <!-- HEADER SECTION -->
+    <section id="head">
     <header class="header">
-        <a href="#" class="logo"><i class="fa-solid fa-desktop"></i>shop</a>
+        <a href="#" class="logo"><i class="fa-solid fa-desktop"></i> shop</a>
         <nav class="navbar">
             <a href="#home">Home</a>
-            <a href="#features">features</a>
+            <a href="#feature">features</a>
             <a href="#products">products</a>
             <a href="#categories">categories</a>
-            <a href="#review">review</a>
         </nav>
 
         <div class="icons">
@@ -57,7 +65,7 @@
                     <span class="quantity">Qty : 1</span>
                 </div>
             </div>
-        
+
             <div class="box">
                 <i class="fa fa-trash" id="motherboard_2"></i>
                 <img src="image/motherboard gigabyte z690 aorus pro 2.png" alt="motherboard2">
@@ -82,39 +90,586 @@
             <a href="#" class="btn">checkout</a>
         </div>
 
-    <form action="#" class="login-form">
-        <h3>login now</h3>
-        <input type="email" placeholder="enter your email" class="box">
-        <input type="password" placeholder="enter password" class="box">
-        <p>forgot your password?<a href="#">Click Here</a></p>
-        <p>Don't have an account?<a href="#">create now</a></p>
-        
-        <input type="submit" value="Login Now" class="btn">
-    </form>
+        <form action="#" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter password" class="box">
+            <p>forgot your password?<a href="#">Click Here</a></p>
+            <p>Don't have an account?<a href="#">create now</a></p>
+
+            <input type="submit" value="Login Now" class="btn">
+        </form>
     </header>
-
-<!-- header ends -->
-
-<!-- banner section -->
-<div class="home" id="home">
-    <div class="content">
-        <h3>Best <span>Motherboard</span> of 2023</h3>
-
-        <a href="#" class="btn">shop now</a>
-    </div>
-</div>
-<!-- banner section ends -->
-
-<!-- feature section -->
-
-<!-- <section class="feature" id="feature">
-    <h1 class="heading">our <span>features</span></h1> -->
-
-
-
-
 </section>
+    <!-- header ends -->
+
+    <!-- banner section -->
+<section id="home
+">
+    <div class="home" id="home">
+        <div class="content">
+            <h3>Best <span class="autoinput"></span></h3>
+
+            <a href="#" class="bhome btn">shop now</a>
+        </div>
+    </div>
+</section>
+    <!-- banner section ends -->
+
+    <!-- feature section -->
+
+    <section class="feature" id="feature">
+        <h1 class="heading"><span>our features</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img class="feature1" src="image/12 months warranty.png">
+                <h3>12 Months Warranty</h3>
+
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img class="feature2" src="image/free shipping.png">
+                <h3>Free Shipping</h3>
+
+                <a href="#" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img class="feature3" src="image/crypto.png">
+                <h3>we accept crypto</h3>
+
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- products section -->
+
+    <section class="products" id="products">
+         <h1 class="heading"><span>our products</span></h1>
+
+         <!-- cpu section -->
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box" id="cpu_section">
+                <img src="image/cpu i5-13600k  1.png" alt="">
+                <h1>intel core i5-13600k </h1>
+                <div class="price">$329/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="cpu_section">
+                <img src="image/cpu i5 13400f 2.png" alt="">
+                <h1>intel core i5 13400f </h1>
+                <div class="price">$221.99/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="cpu_section">
+                <img src="image/cpu i9-13900k 3.png" alt="">
+                <h1>intel core i9-13900k </h1>
+                <div class="price">$589/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="cpu_section">
+                <img src="image/cpu ryzen 7 7700 4.png" alt="">
+                <h1>ryzen 7 7700</h1>
+                <div class="price">$329/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="cpu_section">
+                <img src="image/cpu ryzen 9 7950x 5.png" alt="">
+                <h1>ryzen 9 7950x</h1>
+                <div class="price">$299/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        
+            
+
+            <div class="swiper-slide box" id="cpu_section">
+                <img src="image/cpu ryzen 7 5800x3d 6.png" alt="">
+                <h1>ryzen 7 5800x3d</h1>
+                <div class="price">$323/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- gpu section -->
+    <div class="swiper product-slider" id="gpu_section">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box" id="gpu_section">
+                <img src="image/gpu rtx 4090 1.png" alt="">
+                <h1>NVIDIA rtx 4090 </h1>
+                <div class="price">$1599/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="gpu_section">
+                <img src="image/gpu radeon rx 7900 xtx 2.png" alt="">
+                <h1>radeon rx 7900 xtx</h1>
+                <div class="price">$999/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="gpu_section">
+                <img src="image/gpu radeon rx 6650 tx 3.png" alt="">
+                <h1>radeon rx 6650 tx </h1>
+                <div class="price">$249/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="gpu_section">
+                <img src="image/gpu radeon rx 6600 4.png" alt="">
+                <h1>radeon rx 6600</h1>
+                <div class="price">$330/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="gpu_section">
+                <img src="image/gpu geforce rtx 4070 ti 5.png" alt="">
+                <h1>geforce rtx 4070 ti</h1>
+                <div class="price">$329/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        
+            
+
+            <div class="swiper-slide box" id="gpu_section">
+                <img src="image/gpu radeon rx 7900 xt 6.png" alt="">
+                <h1>radeon rx 7900 xt</h1>
+                <div class="price">$899/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- motherboard section -->
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box" id="motherboard_section">
+                <img src="image/motherboard gigabyte 2790 aorus xtreme 1.png" alt="">
+                <h1>gigabyte 2790 aorus xtreme </h1>
+                <div class="price">$499.99/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="motherboard_section">
+                <img src="image/motherboard gigabyte z690 aorus pro 2.png" alt="">
+                <h1>gigabyte z690 aorus pro</h1>
+                <div class="price">$329/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="motherboard_section">
+                <img src="image/motherboard ASRock Z690 Extreme WiFi 6E 3.png" alt="">
+                <h1>motherboard ASRock Z690 Extreme WiFi 6E </h1>
+                <div class="price">$331.98/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="motherboard_section">
+                <img src="image/motherboard gigabye z690I aorus Ultra plus 4.png" alt="">
+                <h1>gigabye z690I aorus Ultra plus</h1>
+                <div class="price">$329.99/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="motherboard_section">
+                <img src="image/motherboard gigabye aorus z690 Tachyon 5.png" alt="">
+                <h1>gigabye aorus z690 Tachyon 5</h1>
+                <div class="price">$319/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        
+            
+
+            <div class="swiper-slide box" id="motherboard_section">
+                <img src="image/motherboard msi mag b660m mortar wifi ddr4 6.png" alt="">
+                <h1>msi mag b660m mortar</h1>
+                <div class="price">$174/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- phone section -->
+
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box" id="phone_section">
+                <img src="image/phone Phone Asus ROG Phone 5S 1.png" alt="">
+                <h1>Asus ROG Phone 5S </h1>
+                <div class="price">$613/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="phone_section">
+                <img src="image/phone nubia redmagic 8 pro 2.png" alt="">
+                <h1>nubia redmagic 8 pro </h1>
+                <div class="price">$669/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="phone_section">
+                <img src="image/phone iphone 14 pro 3.png" alt="">
+                <h1>iphone 14 pro </h1>
+                <div class="price">$971/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="phone_section">
+                <img src="image/phone xiaomi black shark 5 4.png" alt="">
+                <h1>xiaomi black shark 5</h1>
+                <div class="price">$500/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="phone_section">
+                <img src="image/phone OnePlus 10 pro 10 5.png" alt="">
+                <h1>OnePlus 10 pro 10</h1>
+                <div class="price">488/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        
+            
+
+            <div class="swiper-slide box" id="phone_section">
+                <img src="image/phone Samsung Galaxy S23 6.png" alt="">
+                <h1>Samsung Galaxy S23</h1>
+                <div class="price">$1,199.99/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+    </div>
+
+<!-- monitor section -->
+
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box" id="monitor_section">
+                <img src="image/monitor alienware 34 1 .png" alt="">
+                <h1>alienware 34 </h1>
+                <div class="price">$1299/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="monitor_section">
+                <img src="image/monitor lg 27gn950-b 2 .png" alt="">
+                <h1>lg 27gn950-b </h1>
+                <div class="price">$799.99/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="monitor_section">
+                <img src="image/monitor dell s2722dgm 3 .png" alt="">
+                <h1>lg 27gn950-b </h1>
+                <div class="price">$299.9/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+
+                
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="monitor_section">
+                <img src="image/monitor benq mobiuz ex240 4 .png" alt="">
+                <h1>benq mobiuz ex240</h1>
+                <div class="price">$366.97/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box" id="monitor_section">
+                <img src="image/monitor asrock phantom pg34wq15r2b 5 .png" alt="">
+                <h1>asrock phantom pg34wq15r2b</h1>
+                <div class="price">$430/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        
+            
+
+            <div class="swiper-slide box" id="monitor_section">
+                <img src="image/monitor ROG Swift PG42UQ 6 .png" alt="">
+                <h1>ROG Swift PG42UQ</h1>
+                <div class="price">$1399/--</div>
+                <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CATEGORIES SECTION -->
+
+<section class="categories" id="categories">
+    <h1 class="heading"><span>our categories</span></h1>
+
+    <div class="swiper categories-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide categories_box">
+                <img src="image/cpu i5-13600k  1.png" alt="" class="categories_cpu_img">
+                <h1>cpu</h1>
+                <div class="promo">up to 25% off</div>
+                <a href="#" class="btn">shop now</a>
+            </div>
+
+            <div class="swiper-slide categories_box">
+                <img src="image/gpu rtx 4090 1.png" alt="" class="categories_gpu_img">
+                <h1>gpu </h1>
+                <div class="promo">up to 25% off</div>
+                <a href="#" class="btn">shop now</a>
+            </div>
+
+            <div class="swiper-slide categories_box">
+                <img src="image/motherboard gigabyte 2790 aorus xtreme 1.png" alt="" class="categories_motherboard_img">
+                <h1>motherboard </h1>
+                <div class="promo">up to 25% off</div>
+                <a href="#" class="btn">shop now</a>
+            </div>
+
+            <div class="swiper-slide categories_box" >
+                <img src="image/phone Phone Asus ROG Phone 5S 1.png" alt="" class="categories_phone_img">
+                <h1>phone</h1>
+                <div class="promo">up to 25% off</div>
+                <a href="#" class="btn">shop now</a>
+            </div>
+            
+            <div class="swiper-slide categories_box" >
+                <img src="image/monitor alienware 34 1 .png" alt="" class="categories_monitor_img">
+                <h1>phone</h1>
+                <div class="promo">up to 25% off</div>
+                <a href="#" class="btn">shop now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- footer section begins -->
+ <div id="footer"> <footer>
+    <h2> <p>&copy;  copyright 2023 Dashboard  </p><span>Emilio Tubao &trade;</span></h2>
+ </footer>
+</div> 
+
+
+    <!-- swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <script src="javascript/placeholder.js"></script>
 </body>
+
+
 
 </html>
