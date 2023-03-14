@@ -68,7 +68,7 @@ var swiper = new Swiper(".product-slider", {
     spaceBetween: 40,
     pagination: {
       el: ".swiper-pagination",
-      clickable: true},
+      clickable: false},
 
 breakpoints: {
 0:{
