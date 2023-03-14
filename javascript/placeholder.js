@@ -64,7 +64,7 @@ let typed = new Typed ('.autoinput',{
 
 var swiper = new Swiper(".product-slider", {
     loop:true,
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 40,
     pagination: {
       el: ".swiper-pagination",
@@ -81,13 +81,17 @@ breakpoints: {
 1024:{
     slidesPerView: 3,
 },
+
+1512:{
+    slidesPerView: 4,
+}
 },
 
 });
 
 var swiper = new Swiper(".categories-slider", {
     loop:false,
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 40,
     pagination: {
       el: ".swiper-pagination",

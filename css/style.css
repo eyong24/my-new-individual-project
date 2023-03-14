@@ -32,7 +32,7 @@ transition: all .2s linear;
 
 }
 body {
-    background: rgba(92, 10, 10, 0.583);
+    background: rgb(0, 31, 31);
 }
 
 /* css code for banner */
@@ -460,7 +460,7 @@ border-radius: 1.5rem;
 }
 
 .products .product-slider{
-    margin: 2rem;
+    margin: 5rem;
 }
 
 .products .product-slider .box{
@@ -484,7 +484,7 @@ border-radius: 1.5rem;
 }
 
 .products .product-slider .box h1{
-font-size: 2.5rem;
+font-size: 2.2rem;
 color: var(--black);
 }
 
@@ -534,6 +534,7 @@ color: var(--black);
 .categories{
     /* border: 1px solid; */
     padding: 3rem;
+    margin-top: 0;
     margin: 3rem;
 }
 
