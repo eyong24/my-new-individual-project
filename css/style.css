@@ -12,12 +12,6 @@
 
 }
 
-html{
-    scroll-behavior: smooth;
-    scroll-padding-top: 4rem;
-}
-
-
 *
 {
 font-family: 'Poppins', sans-serif;
@@ -29,10 +23,14 @@ border: none;
 text-decoration: none;
 text-transform: capitalize;
 transition: all .2s linear;
+scroll-behavior: smooth;
+scroll-padding-top: 4rem;
 
 }
 body {
-    background: rgba(0, 124, 124, 0.496);
+    position: relative;
+    /* background: rgba(0, 124, 124, 0.496); */
+    background-color: rgb(14, 14, 14);
 }
 
 /* css code for banner */
@@ -43,10 +41,15 @@ section{
 
 .heading{
     text-align: center;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
     padding-bottom: 3rem;
     font-size: 3.5rem;
     color: var(--black);
+    width: 100%;
+}
+
+.heading h1{
+    width: 100%;
 }
 
 .heading span{
@@ -54,6 +57,8 @@ section{
     color: #fff;
     display: inline-block;
     padding: 0.5rem 3rem;
+    width: 100%;
+    border-radius: 5px;
     /* clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%); */
 
 
@@ -356,7 +361,13 @@ font-size: 1.2rem;
 /* HEADER ENDS */
 
 /* Home section */
-.home{
+
+#home{
+    padding: 0;
+
+
+}
+.home1{
     /* border: 1px solid;
     display: flex;
     justify-content: center;
@@ -374,25 +385,24 @@ font-size: 1.2rem;
     background-size: cover;
     background-position: top;
     justify-content: center;
-    margin: 0;
-    
+    margin: 0;    
 }
 
-.home .content{
+.home1 .content{
     padding: 25%;
     border: 0px solid;
     text-align: center;
     max-width: 100%;
 }
 
-.home .content h3{
+.home1 .content h3{
 
     color: #eee;
     font-size: 3.1rem;
     text-transform: uppercase;
 }
 
-.home .content h3 span{
+.home1 .content h3 span{
     color: rgb(21, 240, 21);
 }
 
@@ -459,6 +469,7 @@ border-radius: 1.5rem;
     /* border: 1px solid; */
     padding: 3rem;
     margin: 3rem;
+    position: relative;
 }
 
 .products .product-slider{
@@ -480,7 +491,7 @@ border-radius: 1.5rem;
 }
 
 .products .product-slider .box img{
-
+    object-fit: cover;
     height: 25rem;
     width: 25rem;
 }
@@ -567,9 +578,14 @@ color: var(--black);
             font-size: 2rem;
             color: var(--light-color);
     }
+    
+    .categories .categories-slider .categories_box img{
+        height: 25rem;
+        width: 25rem;
+        border-radius: 1rem;
+    }
 
-
-    .categories .categories-slider .categories_box .categories_cpu_img{
+    /* .categories .categories-slider .categories_box .categories_cpu_img{
         height: 25rem;
         width: 25rem;
         border-radius: 1rem;
@@ -606,14 +622,16 @@ color: var(--black);
         width: 25rem;
         border-radius: .5rem;
         
-    }
+    } */
 
     /* footer */
 
     #footer{
+        background: rgb(0, 31, 31);
         text-align: center;
-        background-color: black;
         color: var(--tc-light-orange);
+        padding: 5rem;
+        mar
     }
     
     #footer p {
